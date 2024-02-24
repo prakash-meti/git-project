@@ -3,6 +3,6 @@ from django.shortcuts import render
 
 def index_page(request):
     context = {
-        'name':'guest'
+        'name':'GUEST'
     }
     return render(request, 'index.html', context)
