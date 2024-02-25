@@ -1,8 +1,5 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 
 def index_page(request):
-    context = {
-        'name':'GUEST'
-    }
-    return render(request, 'index.html', context)
+    return HttpResponse("<h1>HI DJ REST</h1>")

@@ -20,5 +20,5 @@ from .views import index_page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page),
-    path('home/', include('testapp.urls')),
+    path('apiv1/', include('apiv1.urls')),
 ]
